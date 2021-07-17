@@ -9,6 +9,7 @@ import android.Manifest;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.view.WindowManager;
 
 import com.example.admineduecon.Adapter.VideoAdapter;
 import com.example.admineduecon.Model.Video;
@@ -40,6 +41,7 @@ public class VideoViewActivity extends AppCompatActivity {
         }, REQUEST_CODE);
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_video_view);
+        getWindow().setFlags(WindowManager.LayoutParams.FLAG_LAYOUT_NO_LIMITS, WindowManager.LayoutParams.FLAG_LAYOUT_NO_LIMITS);
 
         setTitle("Videos");
 

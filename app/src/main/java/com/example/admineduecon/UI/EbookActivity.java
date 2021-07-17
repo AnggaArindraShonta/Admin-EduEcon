@@ -6,6 +6,7 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import android.os.Bundle;
+import android.view.WindowManager;
 import android.widget.Toast;
 
 import com.example.admineduecon.Adapter.EbookAdapter;
@@ -31,6 +32,7 @@ public class EbookActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_ebook);
+        getWindow().setFlags(WindowManager.LayoutParams.FLAG_LAYOUT_NO_LIMITS, WindowManager.LayoutParams.FLAG_LAYOUT_NO_LIMITS);
 
         ebookRecycler = findViewById(R.id.rvEbook);
         reference = FirebaseDatabase.getInstance().getReference().child("pdf");

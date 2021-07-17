@@ -22,4 +22,5 @@
         android:layout_margin="20dp"
         android:id="@+id/addVideoBtn"
         android:src="@drawable/ic_add"/>
+
 </RelativeLayout>
