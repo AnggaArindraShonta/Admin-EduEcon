@@ -7,12 +7,15 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.view.WindowManager;
+import android.widget.ImageView;
 
 import com.example.admineduecon.R;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 
-    CardView addEbook, addVideo, ebook;
+    CardView addEbook, addVideo;
+    ImageView ebook, video;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -22,10 +25,12 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         addEbook = findViewById(R.id.addEbook);
         addVideo = findViewById(R.id.addVideo);
         ebook = findViewById(R.id.ebook);
+        video = findViewById(R.id.videoView);
 
         addEbook.setOnClickListener(this);
         addVideo.setOnClickListener(this);
         ebook.setOnClickListener(this);
+        video.setOnClickListener(this);
     }
 
     @Override
@@ -37,11 +42,15 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 startActivity(intent);
                 break;
             case R.id.addVideo:
-                intent = new Intent(MainActivity.this, VideoViewActivity.class);
+                intent = new Intent(MainActivity.this, UploadVideoActivity.class);
                 startActivity(intent);
                 break;
             case R.id.ebook:
                 intent = new Intent(MainActivity.this, EbookActivity.class);
+                startActivity(intent);
+                break;
+            case R.id.videoView:
+                intent = new Intent(MainActivity.this, VideoViewActivity.class);
                 startActivity(intent);
                 break;
         }

@@ -4,12 +4,14 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/bg_ebook"
     android:padding="16dp"
-    tools:context=".UI.UploadPdfActivity">
+    tools:context=".UI.UploadEbookActivity">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:layout_marginTop="100dp"
         android:gravity="center"
         android:orientation="vertical">
 
@@ -29,7 +31,7 @@
                 <ImageView
                     android:layout_width="64dp"
                     android:layout_height="64dp"
-                    android:background="@drawable/ic_circle1"
+                    android:background="@drawable/ic_circle"
                     android:padding="15dp"
                     android:src="@drawable/ic_add_pdf" />
 
@@ -38,9 +40,9 @@
                     android:layout_height="wrap_content"
                     android:layout_marginTop="10dp"
                     android:padding="5dp"
+                    android:fontFamily="@font/poppinsbold"
                     android:text="Select PDF"
-                    android:textColor="@color/black"
-                    android:textStyle="bold" />
+                    android:textColor="@color/black" />
 
 
             </LinearLayout>
@@ -52,30 +54,35 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="No File Selected"
+            android:fontFamily="@font/poppinsmedium"
+            android:textColor="@color/white"
             android:textSize="16sp"/>
 
         <com.google.android.material.textfield.TextInputLayout
             style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
+            android:background="@color/white"
             android:layout_marginTop="16dp">
 
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/judulPdf"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:fontFamily="@font/poppinsmedium"
+                android:background="@drawable/bg_input"
                 android:hint="Masukan judul PDF" />
 
         </com.google.android.material.textfield.TextInputLayout>
 
-        <com.google.android.material.button.MaterialButton
+        <ImageButton
             android:id="@+id/uploadPdfBtn"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="16dp"
+            android:background="@drawable/bg_button"
             android:text="Upload PDF"
             android:textAllCaps="false" />
-
 
     </LinearLayout>
 

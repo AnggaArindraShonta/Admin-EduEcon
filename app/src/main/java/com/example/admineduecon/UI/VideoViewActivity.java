@@ -26,7 +26,6 @@ import java.util.ArrayList;
 public class VideoViewActivity extends AppCompatActivity {
 
     //UI views
-    FloatingActionButton addVideoBtn;
     private RecyclerView rvVideo;
     private ArrayList<Video> videoArrayList;
     private VideoAdapter adapterVideo;
@@ -45,18 +44,10 @@ public class VideoViewActivity extends AppCompatActivity {
 
         setTitle("Videos");
 
-        addVideoBtn = findViewById(R.id.addVideoBtn);
         rvVideo = findViewById(R.id.rvVideo);
-
 
         loadVideoFromFirebase();
 
-        addVideoBtn.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                startActivity(new Intent(VideoViewActivity.this, UploadVideoActivity.class));
-            }
-        });
     }
 
     private void loadVideoFromFirebase() {

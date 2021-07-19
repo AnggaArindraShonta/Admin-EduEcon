@@ -7,8 +7,8 @@ import android.net.Uri;
 import android.os.Bundle;
 import android.provider.OpenableColumns;
 import android.view.WindowManager;
-import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageButton;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -33,7 +33,7 @@ public class UploadEbookActivity extends AppCompatActivity {
 
     private CardView addPdf;
     private EditText pdfTitle;
-    private Button uploadPdfBtn;
+    private ImageButton uploadPdfBtn;
     private TextView tvPdf;
     private String pdfName, title;
 
