@@ -2,7 +2,6 @@ package com.example.admineduecon.UI;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
-import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.app.ProgressDialog;
@@ -15,6 +14,7 @@ import android.view.View;
 import android.view.WindowManager;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageButton;
 import android.widget.MediaController;
 import android.widget.Toast;
 import android.widget.VideoView;
@@ -36,7 +36,7 @@ public class UploadVideoActivity extends AppCompatActivity {
 
     private EditText etTitle;
     private VideoView videoView;
-    private Button uploadVideoBtn;
+    private ImageButton uploadVideoBtn;
     private FloatingActionButton pickVideofab;
     MediaController mediaController;
 
