@@ -8,8 +8,10 @@ import android.os.Bundle;
 import android.view.View;
 import android.view.WindowManager;
 import android.widget.ImageView;
+import android.widget.TextView;
 
 import com.example.admineduecon.R;
+import com.example.admineduecon.SharedPref.SharedPrefManager;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 
@@ -26,11 +28,21 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         addVideo = findViewById(R.id.addVideo);
         ebook = findViewById(R.id.ebook);
         video = findViewById(R.id.videoView);
+        TextView logout = findViewById(R.id.tvLogout);
+
+        final SharedPrefManager sharedPrefManager = new SharedPrefManager(this);
 
         addEbook.setOnClickListener(this);
         addVideo.setOnClickListener(this);
         ebook.setOnClickListener(this);
         video.setOnClickListener(this);
+
+        logout.setOnClickListener(v -> {
+            Intent i = new Intent(MainActivity.this, LoginActivity.class);
+            sharedPrefManager.saveIsLogin(false);
+            finishAffinity();
+            startActivity(i);
+        });
     }
 
     @Override

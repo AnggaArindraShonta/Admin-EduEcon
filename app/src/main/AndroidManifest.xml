@@ -16,7 +16,8 @@
         android:roundIcon="@mipmap/icon"
         android:supportsRtl="true"
         android:theme="@style/Theme.AdminEduEcon">
-        <activity android:name=".UI.MainActivity"/>
+        <activity android:name=".UI.LoginActivity"/>
+        <activity android:name=".UI.MainActivity" />
         <activity android:name=".UI.EbookActivity" />
         <activity android:name=".UI.VideoViewActivity" />
         <activity android:name=".UI.EbookViewActivity" />
