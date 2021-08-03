@@ -9,6 +9,7 @@ import android.view.WindowManager;
 import android.widget.ProgressBar;
 
 import com.example.admineduecon.R;
+import com.example.admineduecon.SharedPref.SharedPrefManager;
 import com.github.ybq.android.spinkit.sprite.Sprite;
 import com.github.ybq.android.spinkit.style.ThreeBounce;
 
@@ -24,11 +25,21 @@ public class SplashActivity extends AppCompatActivity {
         Sprite doubleBounce = new ThreeBounce();
         progressBar.setIndeterminateDrawable(doubleBounce);
         final Handler handler = new Handler();
+        final SharedPrefManager sharedPrefManager = new SharedPrefManager(this);
 
-        handler.postDelayed(() -> {
-            Intent i = new Intent(SplashActivity.this, LoginActivity.class);
-            finishAffinity();
-            startActivity(i);
-        }, 2500);
+        handler.postDelayed(new Runnable() {
+            @Override
+            public void run() {
+                if (sharedPrefManager.getIsLogin()){
+                    Intent i = new Intent(SplashActivity.this, MainActivity.class);
+                    finishAffinity();
+                    startActivity(i);
+                }else{
+                    Intent i = new Intent(SplashActivity.this, LoginActivity.class);
+                    finishAffinity();
+                    startActivity(i);
+                }
+            }
+        }, 3000);
     }
 }
