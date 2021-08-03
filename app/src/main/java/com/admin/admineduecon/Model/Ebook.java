@@ -1,4 +1,4 @@
-package com.example.admineduecon.Model;
+package com.admin.admineduecon.Model;
 
 public class Ebook {
     private String id, pdfTitle, pdfUrl;

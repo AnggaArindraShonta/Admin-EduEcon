@@ -1,4 +1,4 @@
-package com.example.admineduecon.UI;
+package com.admin.admineduecon.UI;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
@@ -9,9 +9,9 @@ import android.os.Bundle;
 import android.view.WindowManager;
 import android.widget.Toast;
 
-import com.example.admineduecon.Adapter.EbookAdapter;
-import com.example.admineduecon.Model.Ebook;
-import com.example.admineduecon.R;
+import com.admin.admineduecon.Adapter.EbookAdapter;
+import com.admin.admineduecon.Model.Ebook;
+import com.admin.admineduecon.R;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;

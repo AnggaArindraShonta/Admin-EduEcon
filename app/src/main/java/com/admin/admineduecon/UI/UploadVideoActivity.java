@@ -1,4 +1,4 @@
-package com.example.admineduecon.UI;
+package com.admin.admineduecon.UI;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -12,14 +12,13 @@ import android.os.Bundle;
 import android.text.TextUtils;
 import android.view.View;
 import android.view.WindowManager;
-import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageButton;
 import android.widget.MediaController;
 import android.widget.Toast;
 import android.widget.VideoView;
 
-import com.example.admineduecon.R;
+import com.admin.admineduecon.R;
 import com.google.android.gms.tasks.OnFailureListener;
 import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.android.gms.tasks.Task;

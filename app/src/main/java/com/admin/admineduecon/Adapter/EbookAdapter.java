@@ -1,4 +1,4 @@
-package com.example.admineduecon.Adapter;
+package com.admin.admineduecon.Adapter;
 
 import android.app.AlertDialog;
 import android.content.Context;
@@ -15,9 +15,9 @@ import android.widget.Toast;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.example.admineduecon.Model.Ebook;
-import com.example.admineduecon.R;
-import com.example.admineduecon.UI.EbookViewActivity;
+import com.admin.admineduecon.Model.Ebook;
+import com.admin.admineduecon.R;
+import com.admin.admineduecon.UI.EbookViewActivity;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.OnFailureListener;
 import com.google.android.gms.tasks.Task;

@@ -1,4 +1,4 @@
-package com.example.admineduecon.Model;
+package com.admin.admineduecon.Model;
 
 public class Video {
     String id, title, timestamp, videoUrl;

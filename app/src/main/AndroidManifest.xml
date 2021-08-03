@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    package="com.example.admineduecon">
+    package="com.admin.admineduecon">
 
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
@@ -16,14 +16,14 @@
         android:roundIcon="@mipmap/icon"
         android:supportsRtl="true"
         android:theme="@style/Theme.AdminEduEcon">
-        <activity android:name=".UI.LoginActivity"/>
-        <activity android:name=".UI.MainActivity" />
-        <activity android:name=".UI.EbookActivity" />
-        <activity android:name=".UI.VideoViewActivity" />
-        <activity android:name=".UI.EbookViewActivity" />
-        <activity android:name=".UI.UploadVideoActivity" />
-        <activity android:name=".UI.UploadEbookActivity" />
-        <activity android:name=".UI.SplashActivity">
+        <activity android:name="com.admin.admineduecon.UI.LoginActivity"/>
+        <activity android:name="com.admin.admineduecon.UI.MainActivity" />
+        <activity android:name="com.admin.admineduecon.UI.EbookActivity" />
+        <activity android:name="com.admin.admineduecon.UI.VideoViewActivity" />
+        <activity android:name="com.admin.admineduecon.UI.EbookViewActivity" />
+        <activity android:name="com.admin.admineduecon.UI.UploadVideoActivity" />
+        <activity android:name="com.admin.admineduecon.UI.UploadEbookActivity" />
+        <activity android:name="com.admin.admineduecon.UI.SplashActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

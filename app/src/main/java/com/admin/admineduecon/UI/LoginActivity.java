@@ -1,4 +1,4 @@
-package com.example.admineduecon.UI;
+package com.admin.admineduecon.UI;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -14,8 +14,8 @@ import android.widget.ImageView;
 import android.widget.ProgressBar;
 import android.widget.Toast;
 
-import com.example.admineduecon.R;
-import com.example.admineduecon.SharedPref.SharedPrefManager;
+import com.admin.admineduecon.R;
+import com.admin.admineduecon.SharedPref.SharedPrefManager;
 
 public class LoginActivity extends AppCompatActivity {
 

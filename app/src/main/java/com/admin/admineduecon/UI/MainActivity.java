@@ -1,4 +1,4 @@
-package com.example.admineduecon.UI;
+package com.admin.admineduecon.UI;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.cardview.widget.CardView;
@@ -10,8 +10,8 @@ import android.view.WindowManager;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-import com.example.admineduecon.R;
-import com.example.admineduecon.SharedPref.SharedPrefManager;
+import com.admin.admineduecon.R;
+import com.admin.admineduecon.SharedPref.SharedPrefManager;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 

@@ -1,4 +1,4 @@
-package com.example.admineduecon.SharedPref;
+package com.admin.admineduecon.SharedPref;
 
 import android.content.Context;
 import android.content.SharedPreferences;

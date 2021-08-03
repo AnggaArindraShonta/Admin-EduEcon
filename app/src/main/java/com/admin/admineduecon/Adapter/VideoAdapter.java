@@ -1,4 +1,4 @@
-package com.example.admineduecon.Adapter;
+package com.admin.admineduecon.Adapter;
 
 import android.app.AlertDialog;
 import android.app.DownloadManager;
@@ -20,8 +20,8 @@ import android.widget.VideoView;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.example.admineduecon.Model.Video;
-import com.example.admineduecon.R;
+import com.admin.admineduecon.Model.Video;
+import com.admin.admineduecon.R;
 import com.google.android.gms.tasks.OnFailureListener;
 import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;

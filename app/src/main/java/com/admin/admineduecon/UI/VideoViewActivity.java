@@ -1,4 +1,4 @@
-package com.example.admineduecon.UI;
+package com.admin.admineduecon.UI;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
@@ -6,15 +6,12 @@ import androidx.core.app.ActivityCompat;
 import androidx.recyclerview.widget.RecyclerView;
 
 import android.Manifest;
-import android.content.Intent;
 import android.os.Bundle;
-import android.view.View;
 import android.view.WindowManager;
 
-import com.example.admineduecon.Adapter.VideoAdapter;
-import com.example.admineduecon.Model.Video;
-import com.example.admineduecon.R;
-import com.google.android.material.floatingactionbutton.FloatingActionButton;
+import com.admin.admineduecon.Adapter.VideoAdapter;
+import com.admin.admineduecon.Model.Video;
+import com.admin.admineduecon.R;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;

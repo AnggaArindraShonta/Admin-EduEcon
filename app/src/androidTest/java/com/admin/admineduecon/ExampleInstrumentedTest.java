@@ -1,4 +1,4 @@
-package com.example.admineduecon;
+package com.admin.admineduecon;
 
 import android.content.Context;
 

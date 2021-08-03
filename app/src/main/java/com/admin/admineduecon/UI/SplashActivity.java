@@ -1,4 +1,4 @@
-package com.example.admineduecon.UI;
+package com.admin.admineduecon.UI;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -8,8 +8,8 @@ import android.os.Handler;
 import android.view.WindowManager;
 import android.widget.ProgressBar;
 
-import com.example.admineduecon.R;
-import com.example.admineduecon.SharedPref.SharedPrefManager;
+import com.admin.admineduecon.R;
+import com.admin.admineduecon.SharedPref.SharedPrefManager;
 import com.github.ybq.android.spinkit.sprite.Sprite;
 import com.github.ybq.android.spinkit.style.ThreeBounce;
 

@@ -1,4 +1,4 @@
-package com.example.admineduecon.UI;
+package com.admin.admineduecon.UI;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -6,7 +6,7 @@ import android.os.AsyncTask;
 import android.os.Bundle;
 import android.view.WindowManager;
 
-import com.example.admineduecon.R;
+import com.admin.admineduecon.R;
 import com.github.barteksc.pdfviewer.PDFView;
 
 import java.io.BufferedInputStream;

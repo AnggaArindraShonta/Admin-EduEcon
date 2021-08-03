@@ -1,4 +1,4 @@
-package com.example.admineduecon.UI;
+package com.admin.admineduecon.UI;
 
 import android.app.ProgressDialog;
 import android.content.Intent;
@@ -17,8 +17,8 @@ import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.cardview.widget.CardView;
 
-import com.example.admineduecon.Model.Ebook;
-import com.example.admineduecon.R;
+import com.admin.admineduecon.Model.Ebook;
+import com.admin.admineduecon.R;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.OnFailureListener;
 import com.google.android.gms.tasks.Task;
